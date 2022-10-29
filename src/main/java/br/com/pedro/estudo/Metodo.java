@@ -39,7 +39,7 @@ public class Metodo {
     }
     
     public void imprimeUsuario(Usuario  objUsuario ){
-        System.out.println( objUsuario.nome + " seu email é " + objUsuario.email );
+        System.out.println( objUsuario.getNome() + " seu email é " + objUsuario.getEmail() );
     }
     
     public int soma2( int n1, int n2){

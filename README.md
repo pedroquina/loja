@@ -38,9 +38,9 @@ Java
 -classe
 --construtor
 --atributo
--- método set/get
--- private
--- public
+---método set/get
+---private
+---public
 -objeto
 -método main
 -métodos e parâmetros
