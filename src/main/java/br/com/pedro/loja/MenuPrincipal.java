@@ -16,6 +16,7 @@ public class MenuPrincipal {
         System.out.println("");
         System.out.println("1. Usuário");
         System.out.println("2. Categoria");
+        System.out.println("0. Finalizar");
 
         System.out.println("");
         System.out.print("Escolha uma opção :");

@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Usuario {
 
-    Scanner teclado = new Scanner(System.in);
+    private Scanner teclado = new Scanner(System.in);
 
-    public Integer usuario_id;
-    public String  nome;
-    public String  email;
-    public String  senha;
+    private Integer usuario_id;
+    private String  nome;
+    private String  email;
+    private String  senha;
     
 
     public void incluir(){

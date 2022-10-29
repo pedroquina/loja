@@ -1,8 +1,11 @@
 Banco de dados :
 
--driver
+
+-criar um novo banco H2
+   java -cp h2-2.1.214.jar org.h2.tools.Shell jdbc:h2:C:/Projeto/banco/nomeDoBanco
 
 -create table
+-- int, varchar, numeric, timestamp
 -- primary key
 -- foreign key
 -drop table
@@ -12,6 +15,10 @@ Banco de dados :
 -insert
 -delete
 -update
+
+-executar script
+   java -cp h2-2.1.214.jar org.h2.tools.RunScript -url jdbc:h2:c:\Projeto\banco\loja -user sa -script c:\Downloads\Script21.sql
+
 
 Maven
 -mvn install
@@ -27,8 +34,13 @@ Git
 -git push
 
 Java
+-driver de banco de dados
 -classe
---contrutor
+--construtor
+--atributo
+-- método set/get
+-- private
+-- public
 -objeto
 -método main
 -métodos e parâmetros
