@@ -7,12 +7,24 @@ public class RepeticaoWhile {
 
     public static void main(String a[]) {
 
-        exemploContinue();  
         
+        exemploBreak();
         
 
     }
 
+    private static void exemploBreak(){
+        int contador = 0;
+        // continue : while, for, do-while
+        while (contador < 10) {
+            System.out.println("Linha : " + contador);
+            if ( contador == 5){
+                break;
+            }
+            contador = contador + 1;
+        }
+        System.out.println("Fim");
+    }
 
     private static void exemploContinue(){
         int contador = 0;

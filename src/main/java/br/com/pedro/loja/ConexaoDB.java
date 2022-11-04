@@ -18,11 +18,8 @@ public class ConexaoDB {
                 "jdbc:h2:tcp://localhost/c:/Projeto/banco/loja", // string de conexão
                  "sa",  // usuário 
                   "") ; // senha
-        } catch (ClassNotFoundException e) {
-            
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (Exception erro) {
+            System.out.println("Erro (getConnection) : " + erro.getMessage());
         }
 
         return conn;
