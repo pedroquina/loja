@@ -44,6 +44,10 @@ Java
 -objeto
 -método main
 -métodos e parâmetros
+-while/ for / do-while
+-- continue
+-- break
+- return
 
 VSCode
 -debug

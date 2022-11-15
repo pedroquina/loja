@@ -16,3 +16,5 @@ d) Permitir selecionar se o produto é favorito ou não.
 
 e) Os campos preço e estoque só podem receber valores maior ou igual a zero.
 - Se for digitado uma valor menor que zero, apresentar uma mensagem de erro e sair da inclusão, retornando ao menu de produto.
+
+f) Na opção listar apresentar o código do produto, o nome do produto, o preço e o nome da categoria 

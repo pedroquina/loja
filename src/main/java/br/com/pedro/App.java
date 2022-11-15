@@ -11,9 +11,9 @@ public final class App {
 
     public static void main(String[] args) throws SQLException {
 
-            MenuPrincipal ze = new MenuPrincipal();
+            MenuPrincipal menu = new MenuPrincipal();
 
-            ze.mostarMenuPrincipal();
+            menu.mostarMenuPrincipal();
 
 
             System.out.println("Fim !!!");
