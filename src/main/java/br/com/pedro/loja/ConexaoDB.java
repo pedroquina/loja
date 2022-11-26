@@ -2,8 +2,10 @@ package br.com.pedro.loja;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class ConexaoDB {
  
@@ -52,5 +54,30 @@ public class ConexaoDB {
         return ret;
     }
 
+
+    // executa Insert e retorna novo ID gerado
+    public int executeInsertGetId(String sqlInsert ){
+        Connection conn = getConnection();
+        int id = -1;
+        try {
+            PreparedStatement pstmt = conn.prepareStatement(sqlInsert,Statement.RETURN_GENERATED_KEYS);
+            int linhasAfetadas = pstmt.executeUpdate();
+            ResultSet idGerado = pstmt.getGeneratedKeys();
+            if ( idGerado.next()){
+                id = idGerado.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return id;
+
+    }
+
+    public static void main(String a[]){
+        ConexaoDB c = new ConexaoDB();
+        String sql = "insert into usuario (nome, email, senha) values('nome','email','senha');";
+        int id = c.executeInsertGetId(sql);
+        System.out.println("ID = " + id);
+    }
 
 }
