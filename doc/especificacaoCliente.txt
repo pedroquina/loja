@@ -1,0 +1,10 @@
+Cliente 
+
+a)Não permitir nome de cliente e telefone em branco.
+- Se o nome do cliente e/ou telefone for deixado em branco apresentar uma mensagem de erro e sair da inclusão, retornando ao menu de produto.
+
+b) O campo criado deve ter a data de inclusão.
+
+c) Os campos endereço e observação podem ser deixados em branco
+
+d) O campo crédito deve ser iniciado com ZERO.

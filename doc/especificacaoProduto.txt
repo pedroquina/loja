@@ -8,7 +8,7 @@ b)Permitir selecionar uma categoria ao incluir um produto.
 - Apresentar a lista de categorias para que o usuário possa escolher uma.
 - Se a categoria for inválida, apresentar uma mensagem de erro e sair da inclusão, retornando ao menu de produto.
 
-c) O campo criado e precoatualizado devem ter o mesmo valor na inclusão do prduto.
+c) O campo criado e precoatualizado devem ter o mesmo valor na inclusão do produto.
 
 d) Permitir selecionar se o produto é favorito ou não.
 - Apresentar uma lista de com as opções "Sim" ou "Não" 
